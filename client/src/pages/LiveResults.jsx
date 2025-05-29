@@ -10,7 +10,7 @@ import React, { useEffect, useState } from "react";
 import io from "socket.io-client";
 import axios from "axios";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://vibe-check-fullstack.onrender.com");
 
 export default function LiveResults() {
   const [results, setResults] = useState({});
