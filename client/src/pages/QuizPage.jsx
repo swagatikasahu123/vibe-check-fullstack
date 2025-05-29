@@ -10,7 +10,7 @@ import React, { useState, useEffect } from "react";
 import io from "socket.io-client";
 import { motion, AnimatePresence } from "framer-motion";
 
-const socket = io("http://localhost:5000");
+const socket = io("https://vibe-check-fullstack.onrender.com");
 
 const questions = [
   {
