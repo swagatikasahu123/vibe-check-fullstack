@@ -20,7 +20,7 @@ export default function LiveResults() {
     // Fetch initial vote results from backend
     const fetchResults = async () => {
       try {
-        const res = await axios.get("http://localhost:5000/results");
+        const res = await axios.get("https://vibe-check-fullstack.onrender.com/results");
         setResults(res.data);
       } catch (err) {
         console.error("Failed to fetch results:", err);
